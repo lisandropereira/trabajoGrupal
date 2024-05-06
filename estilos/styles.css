@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.btn-primary {
+    margin-top: 10px;
+}
+
+.table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#material-table {
+    margin-left: 200px;
+    margin-bottom: 100px;
+}

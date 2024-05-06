@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD App</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Docentes</h2>
+                <form id="docente-form">
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="mail">Mail</label>
+                        <input type="email" id="mail" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="cumple">Cumpleaños</label>
+                        <input type="date" id="cumple" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="cel">Celular</label>
+                        <input type="tel" id="cel" class="form-control">
+                    </div>
+                    <button id="add-docente" class="btn btn-primary">Agregar</button>
+                </form>
+                <table id="docente-table" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Apellido</th>
+                            <th>Nombre</th>
+                            <th>Mail</th>
+                            <th>Cumpleaños</th>
+                            <th>Celular</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="docente-table-body">
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <h2>Materias</h2>
+                <form id="material-form">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="codi">Código</label>
+                        <input type="text" id="codi" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="anho">Año</label>
+                        <input type="number" id="anho" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="docente">Docente</label>
+                        <input type="text" id="docente" class="form-control" value="DIGITE EL NOMBRE DEL DOCENTE ">
+                            
+            
+                    </div>
+                    <div class="form-group">
+                        <label for="carrera">Carrera</label>
+                        <input type="text" id="carrera" class="form-control" value="DIGITE LA CARRERA">
+                            
+                        
+                    </div>
+                    <button id="add-material" class="btn btn-primary">Agregar</button>
+                </form>
+                <table id="material-table" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Código</th>
+                            <th>Año</th>
+                            <th>Docente</th>
+                            <th>Carrera</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="material-table-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="codigo js/script.js"></script>
+</body>
+</html>
